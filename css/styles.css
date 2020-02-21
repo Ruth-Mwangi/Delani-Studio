@@ -1,0 +1,11 @@
+.home{
+    background: url(../images/backgrounds/h_img.jpg);
+    height: 800px;
+    background-size: contain;
+    color: white;
+    padding: 280px;
+    text-align: center;
+}
+.home h6{
+    margin-bottom: 240px;
+}
