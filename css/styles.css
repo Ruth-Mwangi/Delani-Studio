@@ -47,3 +47,43 @@ figcaption{
 .portfolio{
     margin-top: 50px;
 }
+.contact-us{
+    background: url(../images/backgrounds/c_image.jpg);
+    background-size: contain;
+    height: 650px;
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+} 
+#container{
+    margin-top: 30px;
+    
+}
+
+#message{
+    width: 90%;
+    height: 300px;
+    margin:auto;
+    margin-top: 20px;
+    background: transparent;
+    word-wrap: break-word;
+    border: white solid 1px;
+}
+#email,#name{
+    width: 90%;
+    margin: auto;
+    background: transparent;
+    word-wrap: break-word;
+    border: white solid 1px;
+
+}
+::placeholder{
+    color: white;
+    opacity: 1;
+}
+#button{
+    margin: auto;
+    margin-top: 20px;
+    
+    background-color:gray;
+}
