@@ -1,3 +1,12 @@
+h1{
+    font-family: 'Lacquer';
+}
+p{
+   font-family:'Indie Flower';
+   font-size: large;
+   font-weight: bolder;
+    
+}
 .home{
     background: url(../images/backgrounds/h_img.jpg);
     height: 800px;
@@ -6,8 +15,15 @@
     padding: 280px;
     text-align: center;
 }
+.home img{
+    margin-bottom: 20px;
+}
 .home h6{
-    margin-bottom: 240px;
+    margin-bottom: 220px;
+    font-family: Lacquer;
+}
+h2{
+    font-family: 'Simonetta';
 }
 .about-us{
     height:400px;
