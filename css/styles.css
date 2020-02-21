@@ -87,6 +87,10 @@ figcaption{
     
     background-color:gray;
 }
+.socials{
+    height: 150px;
+    text-align: center;
+}
 .social-icons{
     margin-bottom: 20px;
     margin-top: 20px;
