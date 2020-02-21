@@ -22,3 +22,28 @@
     padding: 100px;
     text-align: center;
 }
+.what-we-do{
+    text-align: center;
+    height: 800px;
+}
+figure{
+    display: inline-block;
+    
+    margin-top: 40px;
+}
+figcaption{
+    font-size: x-small;
+}
+ #dev{
+     margin-left: 500px;
+     margin-right: 500px;
+ }
+ .col-md-3 img{
+     
+     margin: 20px;
+     width: 100%;
+     
+ }
+.portfolio{
+    margin-top: 50px;
+}
