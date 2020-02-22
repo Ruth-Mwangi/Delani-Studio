@@ -10,6 +10,11 @@ $(document).ready(function(){
         $("#hide-development").fadeToggle();
 
     });
+    $(".product-management").click(function(){
+        $("#show-product").fadeToggle();
+        $("#hide-product").fadeToggle();
+
+    });
     
 
     
