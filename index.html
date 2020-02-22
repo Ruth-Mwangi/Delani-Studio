@@ -2,10 +2,12 @@
 <html>
     <head>
         <title>Delani Studio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lacquer|Simonetta|Indie+Flower&display=swap" rel="stylesheet">
-        
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script> 
     </head>
     <body>
         <div class="home">
@@ -34,58 +36,116 @@
         </div>
         <div class="what-we-do">
             <h2>WHAT WE DO</h2>
-            <div class="service_icons">
-                <figure>
-                    <img src="images/services_icons/design_icon.png" alt="">
-                    <figcaption>DESIGN</figcaption>
-                </figure>
-                <figure>
-                    <img id="dev"src="images/services_icons/dev_icon.png" alt="">
-                    <figcaption>DEVELOPMENT</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/services_icons/product_icon.png" alt="">
-                    <figcaption>PRODUCT MANAGEMENT </figcaption>
-                </figure>
+            <div class="service-icons">
+                <div class="icon-design">
+                    <figure>
+                        <div class="show" id="show-design">
+                            <img class="design" src="images/services_icons/design_icon.png" alt="">
+                            <figcaption>DESIGN</figcaption>
+    
+                        </div>
+                        <div class="hide" id="hide-design">
+                            <h4 class="design">DESIGN</h4>
+                            <p class="design">Our design practice offers a full range of services including brand strategy, interaction and visual design and user experience testing.
+                                Throughout your project, our designers create and implement visual design and workflows, solicit user feedback and work with you to make sure what gets built is what is needed.</p>
+    
+                        </div>
+                    </figure>
+
+                </div>
+                <div class="icon-development">
+                    <figure>
+                        <div class="show" id="show-development">
+                            <img class="development"src="images/services_icons/dev_icon.png" alt="">
+                            <figcaption>DEVELOPMENT</figcaption>
+                        </div>
+                        <div class="hide" id="hide-development">
+                            <h4 class="development">DEVELOPMENT</h4>
+                            <p class="development">All engineers are fluent in the latest enterprise, mobile and web development technologies.
+                                They collaborate with your team to write, and improve code on a daily basis, using proven practices such as test-driven development and pair programming.</p>
+                        </div>    
+                    </figure>
+
+                </div>
                 
-                
-                
+                <div class="icon-product">
+                    <figure>
+                        <div class="show" id="show-product">
+                            <img class="product-management"src="images/services_icons/product_icon.png" alt="">
+                            <figcaption>PRODUCT MANAGEMENT </figcaption>
+    
+                        </div>
+                        <div class="hide" id="hide-product">
+                            <h4 class="product-management">PRODUCT MANAGEMENT</h4>
+                            <p class="product-management">Planning and development is iterative. Because we are constantly coding and testing, the products we build are always ready to go live. 
+                                This iterative process allows for changes as business requirements evolve.</p>
+    
+                        </div>           
+                        
+                    </figure>
+
+                </div>
+                  
             </div>
-            <div class="container">
+            <div class="container" id="portfolio-container">
                 <h3 class="portfolio">PORTFOLIO</h3>
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="images/portfolio/work4.jpg" alt="">
+                        <img id="portfolio-1" src="images/portfolio/work4.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-1">
+                            <h1>Black.Inc</h1>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="images/portfolio/work3.jpg" alt="">
+                        <img id="portfolio-2" src="images/portfolio/work3.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-2">
+                            <h1>Ontario</h1>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="images/portfolio/work2.jpg" alt="">
+                        <img id="portfolio-3" src="images/portfolio/work2.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-3">
+                            <h1>Orange</h1>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="images/portfolio/work1.jpg" alt="">
+                        <img id="portfolio-4" src="images/portfolio/work1.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-4">
+                            <h1>News Website</h1>
+                        </div>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-3">
-                        <img src="images/portfolio/work5.jpg" alt="">
+                        <img id="portfolio-5" src="images/portfolio/work5.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-5">
+                            <h1>Elena Website</h1>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="images/portfolio/work6.jpg" alt="">
+                        <img id="portfolio-6" src="images/portfolio/work6.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-6">
+                            <h1>Form Creator</h1>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="images/portfolio/work7.jpg" alt="">
+                        <img id="portfolio-7" src="images/portfolio/work7.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-7">
+                            <h1>Burned</h1>
+                        </div>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="images/portfolio/work8.jpg" alt="">
+                        <img id="portfolio-8" src="images/portfolio/work8.jpg" alt="">
+                        <div class="hide" id="hide-portfolio-8">
+                            <h1>Girrafe Cafe</h1>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -93,8 +153,8 @@
         </div>
         <div class="contact-us">
             <h2>CONTACT US</h2>
-            <div class="container" id="container">
-                <form>
+            <div class="container" id="form-container">
+                <form id="form">
                     <div class="row">
                         <div class="col-md-6">
                             <input type="text" name="name" id="name" placeholder="Name...">   
@@ -111,6 +171,7 @@
                     
                     </div>
                 </form>
+                
             </div>
 
         </div>
@@ -129,8 +190,6 @@
             </div>
             
             <p>DELANI STUDIO <br>2019</p>
-            
-
 
         </div>
 

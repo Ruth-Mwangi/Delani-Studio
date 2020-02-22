@@ -1,5 +1,6 @@
 h1{
     font-family: 'Lacquer';
+    
 }
 p{
    font-family:'Indie Flower';
@@ -35,7 +36,7 @@ h2{
     background: url(../images/backgrounds/s_image.jpg);
     background-size: contain;
     color: white;
-    padding: 100px;
+    padding: 50px;
     text-align: center;
 }
 .what-we-do{
@@ -45,15 +46,13 @@ h2{
 figure{
     display: inline-block;
     
+    
     margin-top: 40px;
 }
 figcaption{
     font-size: x-small;
 }
- #dev{
-     margin-left: 500px;
-     margin-right: 500px;
- }
+ 
  .col-md-3 img{
      
      margin: 20px;
@@ -71,7 +70,7 @@ figcaption{
     color: white;
     text-align: center;
 } 
-#container{
+#form-container{
     margin-top: 30px;
     
 }
@@ -114,3 +113,85 @@ figcaption{
 .social-icons img{
     margin-right: 20px;
 }
+
+.hide{
+    display: none;
+    width: fit-content;
+}
+
+.service-icons {
+    display: inline-block;
+    width: 100%;
+      
+}
+.icon-design,.icon-development,.icon-product{
+    float:left;
+    width: 33%;
+    text-align: center;
+    
+}
+.service-icons h4{
+    font-weight: bold;
+}
+#portfolio-container .hide{
+    
+    
+    color: black;
+    text-align: center;
+    margin: 20px;
+    width: 100%;
+    height: 85%;
+    padding: 20px;
+    border: white solid;
+    background-size:contain;
+}
+.hide h1{
+   background-color: white;
+   opacity: 0.6;
+   width: 100%;
+   height: 100%;
+   font-weight: bolder;
+   margin: auto;
+
+}
+
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    body {
+      width: 100%;
+      
+    }
+    .row img{
+        width: 100%;
+        height: fit-content;
+    }
+    .what-we-do{
+        height: fit-content;
+    }
+    
+  }
+
+
+
+@media only screen and (max-width:620px) {
+    /* For mobile phones: */
+    body {
+      width:fit-content;
+      height: min-content;
+
+      display: block;
+    }
+    .row img{
+        width: 50%;
+        height: fit-content;
+    }
+    .what-we-do{
+        height: fit-content;
+    }
+    .service-icons{
+        display: grid;
+        padding-left: 200px;
+
+    }
+    
+  }
