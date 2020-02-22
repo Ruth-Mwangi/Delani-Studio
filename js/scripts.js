@@ -112,6 +112,42 @@ $(document).ready(function(){
         }
         
     });
+
+    // capturing form input
+
+    $("#form-container form").submit(function(event){
+        var arrays=["name","email","message"];
+        
+        arrays.forEach(function(array){
+            var myInput=$("#"+array).val();
+            if(array==="name"&&myInput===""){
+                alert("Please insert name before sending");
+                $("#"+array)[0].reset();
+                return false;
+                
+            }
+            if(array==="email"&&myInput===""){
+                alert("Please insert email before sending");
+                $("#"+array)[0].reset();
+                return false;
+                
+            }
+            if(array==="message"&&myInput===""){
+                alert("Please insert message before sending");
+                $("#"+array)[0].reset();
+                return false;
+            }
+            if(array==="name"&&myInput!==""){
+                alert(myInput+", we have received your message. Thank you for reaching out to us.");
+
+            }
+            
+        });
+
+        $("#form")[0].reset();
+        event.preventDefault();
+
+    });
     
 
     
