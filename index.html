@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://fonts.googleapis.com/css?family=Lacquer|Simonetta|Indie+Flower&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="css/styles.css" type="text/css">
+        <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+        <script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='MESSAGE';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
         <script src="js/scripts.js"></script> 
     </head>
@@ -89,29 +93,29 @@
             </div>
             <div class="container" id="portfolio-container">
                 <h3 class="portfolio">PORTFOLIO</h3>
-                <div class="row">
-                    <div class="col-md-3">
+                <div class="row" id="row-1">
+                    <div class="col-md-3" id="c1">
                         <img id="portfolio-1" src="images/portfolio/work4.jpg" alt="">
                         <div class="hide" id="hide-portfolio-1">
                             <h1>Black.Inc</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3"id="c2">
                         <img id="portfolio-2" src="images/portfolio/work3.jpg" alt="">
                         <div class="hide" id="hide-portfolio-2">
                             <h1>Ontario</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="c3">
                         <img id="portfolio-3" src="images/portfolio/work2.jpg" alt="">
                         <div class="hide" id="hide-portfolio-3">
                             <h1>Orange</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="c4">
                         <img id="portfolio-4" src="images/portfolio/work1.jpg" alt="">
                         <div class="hide" id="hide-portfolio-4">
                             <h1>News Website</h1>
@@ -120,28 +124,28 @@
                 </div>
 
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="c5">
                         <img id="portfolio-5" src="images/portfolio/work5.jpg" alt="">
                         <div class="hide" id="hide-portfolio-5">
                             <h1>Elena Website</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="c6">
                         <img id="portfolio-6" src="images/portfolio/work6.jpg" alt="">
                         <div class="hide" id="hide-portfolio-6">
                             <h1>Form Creator</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="c7">
                         <img id="portfolio-7" src="images/portfolio/work7.jpg" alt="">
                         <div class="hide" id="hide-portfolio-7">
                             <h1>Burned</h1>
                         </div>
                     </div>
 
-                    <div class="col-md-3">
+                    <div class="col-md-3" id="c8">
                         <img id="portfolio-8" src="images/portfolio/work8.jpg" alt="">
                         <div class="hide" id="hide-portfolio-8">
                             <h1>Girrafe Cafe</h1>
@@ -154,20 +158,26 @@
         <div class="contact-us">
             <h2>CONTACT US</h2>
             <div class="container" id="form-container">
-                <form id="form">
+                <form id="form" action="https://github.us4.list-manage.com/subscribe/post?u=9771b7094fed8a6f430b6b04a&amp;id=f8f6b169d9" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
                     <div class="row">
                         <div class="col-md-6">
-                            <input type="text" name="name" id="name" placeholder="Name...">   
+                            <input type="text" value="" name="FNAME" class="" id="mce-FNAME" placeholder="Name....">   
                         </div>
                         <div class="col-md-6">
-                            <input type="email" name="email" id="email" placeholder="Email...">
+                            <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="Email...">
                         </div>
                     </div>
                     <div class="row" id="row-message">
-                        <textarea name="message" id="message" placeholder="Your message here..."></textarea>
+                        <input type="text" value="" name="MESSAGE" class="required" id="mce-MESSAGE" placeholder="Message...">
                     </div>
                     <div class="row">
-                        <button type="submit" id="button">Send</button>
+                        <div id="mce-responses" class="clear">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9771b7094fed8a6f430b6b04a_f8f6b169d9" tabindex="-1" value=""></div>
+                        <div class="clear"><input type="submit" value="Send" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+                        
                     
                     </div>
                 </form>
@@ -192,6 +202,6 @@
             <p>DELANI STUDIO <br>2019</p>
 
         </div>
-
+        
     </body>
 </html>
